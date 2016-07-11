@@ -6,8 +6,9 @@ body {
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
+  background-color: #d0e4ea;
   line-height: 1.5;
-  color: #606c71; }
+  color: #4298B5; }
 
 a {
   color: #1e6bb8;
@@ -18,9 +19,9 @@ a {
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba(60, 60, 60, 0.7);
+  background-color: rgba(60, 60, 60, 0.08);
+  border-color: rgba(60, 60, 60, 0.2);
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
@@ -29,10 +30,10 @@ a {
     margin-left: 1rem; }
 
 .btn:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(60, 60, 60, 0.8);
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.25);
-  border-color: rgba(255, 255, 255, 0.7); }
+  background-color: rgba(60, 60, 60, 0.25);
+  border-color: rgba(60, 60, 60, 0.7); }
 
 @media screen and (min-width: 64em) {
   .btn {
@@ -54,10 +55,10 @@ a {
       margin-left: 0; } }
 
 .page-header {
-  color: #fff;
+  color: rgba(60, 60, 60, 0.8);
   text-align: center;
   background-color: #159957;
-  background-image: linear-gradient(160deg, #155799, #159957); }
+  background-image: linear-gradient(180deg, #DD5F32, #d0e4ea); }
 
 @media screen and (min-width: 64em) {
   .page-header {
@@ -112,7 +113,7 @@ a {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
-  color: #159957; }
+  color: #e0582a; }
 .main-content p {
   margin-bottom: 1em; }
 .main-content code {
@@ -120,7 +121,7 @@ a {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.9rem;
   color: #383e41;
-  background-color: #f3f6fa;
+  background-color: #ADC4CC;
   border-radius: 0.3rem; }
 .main-content pre {
   padding: 0.8rem;
@@ -223,7 +224,7 @@ a {
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px #eff0f1; }
+  border-top: solid 1px #9ab0b7; }
 
 .site-footer-owner {
   text-align: center;
@@ -233,7 +234,7 @@ a {
 .site-footer-credits {
   text-align: center;
   font-size: 70%;
-  color: #819198; }
+  color: #4298B5; }
 
 @media screen and (min-width: 64em) {
   .site-footer {
