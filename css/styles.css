@@ -1,0 +1,156 @@
+html,body {
+    margin:0;
+    padding:0;
+}
+
+body {
+    color: white;
+    background-color: transparent;
+    overflow-x: hidden;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+    margin:0;
+    padding:0;
+}
+
+
+#title {
+  font-weight: bolder;
+  font-size: 12vh;
+}
+
+#hero {
+    top:0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: url('http://i.imgur.com/Xex4i4s.jpg') blue;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 130vh;
+    width: 100vw;
+}
+
+.hero-content {
+  height: 100vh;
+  padding-top: calc(100vh/4);
+}
+
+
+.section-title {
+  font-weight: 600;
+  font-size: 5vh;
+  margin: .5vh;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 2.5vh;
+  text-align: center;
+}
+
+.subheader {
+  margin: 2vh .5vh .5vh .5vh;
+}
+
+
+#wingHead {
+    font-weight:bolder;
+    font-size: 15vh;
+    text-transform: uppercase;
+    color: white;
+}
+
+.main-section {
+    background-color: white;
+    color: black;
+    min-height: 50vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.container {
+  padding-top: calc(100vh/8);
+}
+
+
+#docs {
+    background-color: white;
+    color: black;
+    min-height: 100vh;
+    width: 100vw;
+    text-align: left;
+}
+
+.docSection {
+  padding: 4rem 0;
+}
+
+#gridExample [class^='col-'] {
+  background: #EEE;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  min-height: 30px !important;
+  line-height: 30px;
+  margin-bottom: .75rem;
+  font-weight: bold;
+  letter-spacing: .1rem;
+}
+
+#hackButton {
+  background: #40d5de;
+}
+
+#examples {
+  background-color: white;
+  color: black;
+  min-height: 50vh;
+  width: 100vw;
+}
+
+#thanks {
+  background-color: white;
+  color: black;
+  min-height: 50vh;
+  width: 100vw;
+}
+#social {
+  position: fixed;
+  z-index: 100;
+  display: inline;
+}
+  
+#logo {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 100px;
+}
+
+#footer {
+  font-size: 85%;
+  color: black;
+  text-align: center;
+}
+
+#footer .container {
+  padding-top: 0vh;
+  opacity: 0.7;
+}
+
+
+#linkP {
+    color: white;
+    text-decoration: none;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
