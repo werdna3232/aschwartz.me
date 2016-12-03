@@ -1,294 +1,93 @@
-html,body {
-  margin:0;
-  padding:0;
+h1, h2, h3, h4, p, body, a {
+  color: #051F26;
 }
 
-body {
-  color: white;
-  background-color: transparent;
-  overflow-x: hidden;
+p {
+  font-size: 1.2em;
 }
 
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
-  margin:0;
-  padding:0;
+h2, h3, h4, p, body, a, button {
+font-family: 'EB Garamond', serif;
 }
 
-
-
-@media (min-width:768px) {
-  .row{margin-top:0;
-  }
-  .row [class*=" col-"], .row [class^=col-] {
-    width:100%;
-    margin-top:2.0833%;
-    margin-left:0;
-  }
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
 }
 
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  h1 {
-    color: red;
-  }
-
-  #hero-content {
-    transform: scale(20);
-  }
+html {
+  background-color: #F2F5F7;
 }
 
+/* --------- HEADER --------- */
+
+#header {
+ background: url('https://raw.githubusercontent.com/schwartzadev/aschwartz.me/master/img/hero.jpg') black;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ padding-bottom: 5vh;
+ height: 95vh ;
+}
+
+p.white {
+  margin-top: 0vh;
+}
+
+#logo {
+  padding-top: 1.5em;
+  padding-left: 1.5em;
+  width: 20%; /* you can use % */
+  height: auto;
+}
 
 #title {
-  font-weight: bolder;
-  font-size: 12vw;
+  font-size: 10em;
+  margin-top: 5vh;
   margin-bottom: 2vh;
 }
 
-#hero {
-  top:0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  background: url('https://raw.githubusercontent.com/schwartzadev/aschwartz.me/master/img/hero.jpg') black;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 130vh;
-  width: 100vw;
+#sub {
+  font-size: 3em;
+  font-family: 'EB Garamond', serif;
 }
 
-.hero-content {
-  height: 100vh;
-  padding-top: 35vh;
-}
-
-
-.section-title {
-  font-weight: 600;
-  font-size: 5vh;
-  margin: .5vh;
+.center {
   text-align: center;
 }
 
-.section-subtitle {
-  font-size: 2.5vh;
-  text-align: center;
+#header > div {
+padding-top: 10vh;
 }
 
-.subheader {
-  margin: 2vh .5vh .5vh .5vh;
-}
-
-
-#wingHead {
-  font-weight:bolder;
-  font-size: 15vh;
-  text-transform: uppercase;
+.white {
   color: white;
 }
 
-.main-section {
-  background-color: white;
-  color: black;
-  min-height: 50vh;
-  width: 100vw;
+.btn {
+  font-size: 2.5em;
+  color: #fff;
+  -webkit-border-radius: .1em;
+  -moz-border-radius: .1em;
+  border-radius: .1em;
+  padding: 10px 20px 10px 20px;
+  border: solid #fff .1em;
+  background: none;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #051F26;
+}
+
+
+
+/* --------- FOOTER --------- */
+
+#footer {
   text-align: center;
+  background-color: #DDDDDD;
 }
-
-.container {
-  padding-top: calc(100vh/8);
+#footer > div > p {
+  font-size: .75em;
 }
-
-
-#docs {
-  background-color: white;
-  color: black;
-  min-height: 100vh;
-  width: 100vw;
-  text-align: left;
-}
-
-.docSection {
-  padding: 4rem 0;
-}
-
-#gridExample [class^='col-'] {
-  background: #EEE;
-  text-align: center;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  min-height: 30px !important;
-  line-height: 30px;
-  margin-bottom: .75rem;
-  font-weight: bold;
-  letter-spacing: .1rem;
-}
-
-#hackButton {
-  background: #40d5de;
-}
-
-#examples {
-  background-color: white;
-  color: black;
-  min-height: 50vh;
-  width: 100vw;
-}
-
-
-/***********************
-        GALLERY
-        ***********************/
-
-        .photo-grid {
-          margin: 1em auto;
-          max-width: 1106px;
-          text-align: center;
-        }
-
-        .photo-grid li {
-          border: 5px solid white;
-          display: inline-block;
-        }
-
-        .photo-grid img {
-          display: block;
-          height: auto;
-          max-width: 100%;
-        }
-
-        .photo-grid figure {
-          height: 163px;
-          overflow: hidden;
-          position: relative;
-          width: 289px;
-        }
-
-        .photo-grid figcaption {
-          background: rgba(0,0,0,0.8);
-          color: white;
-          display: table;
-          height: 100%;
-          left: 0;
-          opacity: 0;
-          position: absolute;
-          right: 0;
-          top: 0;
-          z-index: 100;
-        }
-
-        .photo-grid figcaption p {
-          display: table-cell;
-          font-size: 1.5em;
-          position: relative;
-          top: -40px;
-          width: 289px;
-          vertical-align: middle;
-        }
-
-        .photo-grid li:hover figcaption {
-          opacity: 1;
-        }
-
-        .photo-grid img {
-          display: block;
-          height: auto;
-          -webkit-transition: all 300ms;
-          -moz-transition: all 300ms;
-          transition: all 300ms;
-          max-width: 100%;
-        }
-
-        .photo-grid li:hover img {
-          -webkit-transform: scale(1.2);
-          -moz-transform: scale(1.2);
-          transform: scale(1.2);
-        }
-
-        .photo-grid figcaption p {
-          display: table-cell;
-          font-size: 1.5em;
-          position: relative;
-          top: -40px;
-          width: 289px;
-          -webkit-transition: all 300ms ease-out;
-          -moz-transition: all 300ms ease-out;
-          transition: all 300ms ease-out;
-          vertical-align: middle;
-        }
-
-        .photo-grid li:hover figcaption p {
-          -moz-transform: translateY(40px);
-          -webkit-transform: translateY(40px);
-          transform: translateY(40px);
-        }
-
-        .photo-grid figcaption {
-          background: rgba(0,0,0,0.6);
-          color: white;
-          display: table;
-          height: 100%;
-          left: 0;
-          opacity: 0;
-          position: absolute;
-          right: 0;
-          top: 0;
-          -webkit-transition: all 300ms;
-          -moz-transition: all 300ms;
-          transition: all 300ms;
-          -webkit-transition-delay: 100ms;
-          -moz-transition-delay: 100ms;
-          transition-delay: 100ms;
-          z-index: 100;
-        }
-
-        figcaption {
-          font-family: Quicksand;
-          font-size: 2.5vh;
-        }
-
-        /**END**/
-
-
-
-
-
-        #logo {
-          position: absolute;
-          top: 5%;
-          left: 5%;
-          width: 100px;
-        }
-
-        #footer {
-          font-size: 100%;
-          color: black;
-          text-align: center;
-        }
-
-        #footer a {
-          color: black;
-          text-decoration: none;
-        }
-
-        #footer a:hover {
-          text-decoration: underline;
-        }
-
-        #footer .container {
-          padding-top: 0vh;
-          opacity: 0.7;
-        }
-
-
-        #linkP {
-          color: white;
-          text-decoration: none;
-        }
-
-        hr {
-          border: 0;
-          height: 1px;
-          background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-        }
