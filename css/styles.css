@@ -1,37 +1,60 @@
 html,body {
-    margin:0;
-    padding:0;
+  margin:0;
+  padding:0;
 }
 
 body {
-    color: white;
-    background-color: transparent;
-    overflow-x: hidden;
+  color: white;
+  background-color: transparent;
+  overflow-x: hidden;
 }
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
-    margin:0;
-    padding:0;
+  margin:0;
+  padding:0;
+}
+
+
+
+@media (min-width:768px) {
+  .row{margin-top:0;
+  }
+  .row [class*=" col-"], .row [class^=col-] {
+    width:100%;
+    margin-top:2.0833%;
+    margin-left:0;
+  }
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  h1 {
+    color: red;
+  }
+
+  #hero-content {
+    transform: scale(20);
+  }
 }
 
 
 #title {
   font-weight: bolder;
-  font-size: 12vh;
+  font-size: 12vw;
+  margin-bottom: 2vh;
 }
 
 #hero {
-    top:0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    background: url('https://raw.githubusercontent.com/schwartzadev/aschwartz.me/master/img/hero.jpg') black;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 130vh;
-    width: 100vw;
+  top:0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: url('https://raw.githubusercontent.com/schwartzadev/aschwartz.me/master/img/hero.jpg') black;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 130vh;
+  width: 100vw;
 }
 
 .hero-content {
@@ -58,18 +81,18 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 
 
 #wingHead {
-    font-weight:bolder;
-    font-size: 15vh;
-    text-transform: uppercase;
-    color: white;
+  font-weight:bolder;
+  font-size: 15vh;
+  text-transform: uppercase;
+  color: white;
 }
 
 .main-section {
-    background-color: white;
-    color: black;
-    min-height: 50vh;
-    width: 100vw;
-    text-align: center;
+  background-color: white;
+  color: black;
+  min-height: 50vh;
+  width: 100vw;
+  text-align: center;
 }
 
 .container {
@@ -78,11 +101,11 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 
 
 #docs {
-    background-color: white;
-    color: black;
-    min-height: 100vh;
-    width: 100vw;
-    text-align: left;
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  width: 100vw;
+  text-align: left;
 }
 
 .docSection {
@@ -116,156 +139,156 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 
 /***********************
         GALLERY
-***********************/
+        ***********************/
 
-.photo-grid {
-  margin: 1em auto;
-  max-width: 1106px;
-  text-align: center;
-}
+        .photo-grid {
+          margin: 1em auto;
+          max-width: 1106px;
+          text-align: center;
+        }
 
-.photo-grid li {
-  border: 5px solid white;
-  display: inline-block;
-}
+        .photo-grid li {
+          border: 5px solid white;
+          display: inline-block;
+        }
 
-.photo-grid img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
+        .photo-grid img {
+          display: block;
+          height: auto;
+          max-width: 100%;
+        }
 
-.photo-grid figure {
-  height: 163px;
-  overflow: hidden;
-  position: relative;
-  width: 289px;
-}
+        .photo-grid figure {
+          height: 163px;
+          overflow: hidden;
+          position: relative;
+          width: 289px;
+        }
 
-.photo-grid figcaption {
-  background: rgba(0,0,0,0.8);
-  color: white;
-  display: table;
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 100;
-}
+        .photo-grid figcaption {
+          background: rgba(0,0,0,0.8);
+          color: white;
+          display: table;
+          height: 100%;
+          left: 0;
+          opacity: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: 100;
+        }
 
-.photo-grid figcaption p {
-  display: table-cell;
-  font-size: 1.5em;
-  position: relative;
-  top: -40px;
-  width: 289px;
-  vertical-align: middle;
-}
+        .photo-grid figcaption p {
+          display: table-cell;
+          font-size: 1.5em;
+          position: relative;
+          top: -40px;
+          width: 289px;
+          vertical-align: middle;
+        }
 
-.photo-grid li:hover figcaption {
-  opacity: 1;
-}
+        .photo-grid li:hover figcaption {
+          opacity: 1;
+        }
 
-.photo-grid img {
-  display: block;
-  height: auto;
-  -webkit-transition: all 300ms;
-  -moz-transition: all 300ms;
-  transition: all 300ms;
-  max-width: 100%;
-}
+        .photo-grid img {
+          display: block;
+          height: auto;
+          -webkit-transition: all 300ms;
+          -moz-transition: all 300ms;
+          transition: all 300ms;
+          max-width: 100%;
+        }
 
-.photo-grid li:hover img {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  transform: scale(1.2);
-}
+        .photo-grid li:hover img {
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          transform: scale(1.2);
+        }
 
-.photo-grid figcaption p {
-  display: table-cell;
-  font-size: 1.5em;
-  position: relative;
-  top: -40px;
-  width: 289px;
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-  vertical-align: middle;
-}
+        .photo-grid figcaption p {
+          display: table-cell;
+          font-size: 1.5em;
+          position: relative;
+          top: -40px;
+          width: 289px;
+          -webkit-transition: all 300ms ease-out;
+          -moz-transition: all 300ms ease-out;
+          transition: all 300ms ease-out;
+          vertical-align: middle;
+        }
 
-.photo-grid li:hover figcaption p {
-  -moz-transform: translateY(40px);
-  -webkit-transform: translateY(40px);
-  transform: translateY(40px);
-}
+        .photo-grid li:hover figcaption p {
+          -moz-transform: translateY(40px);
+          -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+        }
 
-.photo-grid figcaption {
-  background: rgba(0,0,0,0.6);
-  color: white;
-  display: table;
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  -webkit-transition: all 300ms;
-  -moz-transition: all 300ms;
-  transition: all 300ms;
-  -webkit-transition-delay: 100ms;
-  -moz-transition-delay: 100ms;
-  transition-delay: 100ms;
-  z-index: 100;
-}
+        .photo-grid figcaption {
+          background: rgba(0,0,0,0.6);
+          color: white;
+          display: table;
+          height: 100%;
+          left: 0;
+          opacity: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          -webkit-transition: all 300ms;
+          -moz-transition: all 300ms;
+          transition: all 300ms;
+          -webkit-transition-delay: 100ms;
+          -moz-transition-delay: 100ms;
+          transition-delay: 100ms;
+          z-index: 100;
+        }
 
-figcaption {
-  font-family: Quicksand;
-  font-size: 2.5vh;
-}
+        figcaption {
+          font-family: Quicksand;
+          font-size: 2.5vh;
+        }
 
-/**END**/
-
-
+        /**END**/
 
 
 
-#logo {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 100px;
-}
-
-#footer {
-  font-size: 100%;
-  color: black;
-  text-align: center;
-}
-
-#footer a {
-  color: black;
-  text-decoration: none;
-}
-
-#footer a:hover {
-  text-decoration: underline;
-}
-
-#footer .container {
-  padding-top: 0vh;
-  opacity: 0.7;
-}
 
 
-#linkP {
-    color: white;
-    text-decoration: none;
-}
+        #logo {
+          position: absolute;
+          top: 5%;
+          left: 5%;
+          width: 100px;
+        }
 
-hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
+        #footer {
+          font-size: 100%;
+          color: black;
+          text-align: center;
+        }
+
+        #footer a {
+          color: black;
+          text-decoration: none;
+        }
+
+        #footer a:hover {
+          text-decoration: underline;
+        }
+
+        #footer .container {
+          padding-top: 0vh;
+          opacity: 0.7;
+        }
+
+
+        #linkP {
+          color: white;
+          text-decoration: none;
+        }
+
+        hr {
+          border: 0;
+          height: 1px;
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
