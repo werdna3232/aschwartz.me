@@ -20,6 +20,10 @@ body, p, li {
 	margin-top: 3em;
 }
 
+p {
+	font-size: 125%;
+}
+
 
 
 hr { 
@@ -39,7 +43,7 @@ hr {
 	list-style-type: none;
 }
 
-#about li > i {
+#about li > p > i {
 	padding-right: 1em;
 }
 
@@ -75,7 +79,8 @@ hr {
 /*  ---  ABOUT  ---  */
 
 .fa-github, .fa-codepen, .fa-free-code-camp {
-	padding-right: .5em;
+	padding: .25em .5em;
+	font-size: 2em;
 }
 
 

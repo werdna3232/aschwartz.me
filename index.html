@@ -1,12 +1,12 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- jquery -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css"> <!-- custom css-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icons -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- jquery -->
   <script type="text/javascript">
     $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -38,7 +38,6 @@
 - Add Favicon
 - Add Logo
 - Add Drift
-- 
   -->
 
   <!-- BEGIN NAV  --> 
@@ -84,7 +83,7 @@
     <div class="row">
       <div class="col-md-9">
         <ul>
-          <li><i class="fa fa-map-marker fa-lg"></i>Denver, CO, USA</p></li>
+          <li><p><i class="fa fa-map-marker fa-lg"></i>Denver, CO, USA</p></li>
         </ul>
         <p>I am a young frontend developer with a passion for neat, consise design and web. My interests range from Java to web design to Android development.</p>
         <hr>
@@ -92,17 +91,27 @@
       </div>
       <div class="col-md-3">
         <h3 class="text-center social">Connect with Me</h3>
-        <p class="text-left"><a href="https://github.com/schwartzadev"><i class="fa fa-github fa-lg"></i>Github</p></a>
-        <p class="text-right"><a href="https://www.freecodecamp.com/schwartzadev"><i class="fa fa-free-code-camp fa-lg"></i>Free Code Camp</p></a>
-        <p class="text-left"><a href="http://codepen.io/schwartzadev/"><i class="fa fa-codepen fa-lg"></i>Code Pen</p></a>
+        <div class="text-center">
+        <a href="https://github.com/schwartzadev"><i class="fa fa-github fa-3x"></i></a>
+        <a href="https://www.freecodecamp.com/schwartzadev"><i class="fa fa-free-code-camp fa-3x"></i></a>
+        <a href="http://codepen.io/schwartzadev/"><i class="fa fa-codepen fa-3x"></i></a>
+        </div>
       </div>
     </div>
   </div>
   <!-- END ABOUT -->
 
+  <!-- BEGIN TEMP PLACEHOLDER -->
+  <div id="portfolio" class="section section-clear container-fluid">
+    <h1 class="text-center"><b>MORE COMING SOON</b></h1>
+    <div class="text-center">
+    <p>Stay tuned for the new website updates!</p>
+    </div>
+  </div>
+  <!-- END TEMP PLACEHOLDER -->
 
   <!-- BEGIN PORTFOLIO -->
-  <div id="portfolio" class="section section-clear container-fluid">
+  <!-- <div id="portfolio" class="section section-clear container-fluid">
     <h1 class="text-center"><b>WHAT HAVE I DONE?</b></h1>
     <div class="row text-center">
       <div class="col-md-4 col-sm-6">
@@ -124,7 +133,7 @@
         </figure>    
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- END PORTFOLIO -->
 
 
@@ -133,10 +142,10 @@
     <h1 class="text-center"><b>LET'S GET IN TOUCH!</b></h1>
     <div class="row">
       <div class="col-md-6">
-        <p>If you have any questions regarding my resum&eacute;, my experience, or anything else, be it related or not, I would love to be in touch. Please reach me via the form here or via email: andrew|at|aschwartz|dot|me .</p>
+        <p>If you have any questions regarding my resum&eacute;, my experience, or anything else, be it related or not, I would love to be in touch. Please reach me via the form here or via email: </br></br>andrew|at|aschwartz|dot|me .</p>
       </div>
       <div class="col-md-6">
-        <form>
+        <!-- <form>
           <div class="form-group">
             <label>What's your full name? *</label>
             <input type="text" class="form-control" placeholder="First Last" required>
@@ -155,7 +164,7 @@
             <textarea rows="4" placeholder="Dear Andrew..." required></textarea>
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
-        </form>
+        </form> -->
       </div>
     </div>
   </div>
