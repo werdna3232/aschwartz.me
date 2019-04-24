@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,42 +66,10 @@
   </ul>
 
   <h2 class="red-bg">Projects</h2><hr>
-
-  <h3><a href="https://play.google.com/store/apps/details?id=com.aschwartz.flatwhite">Flat White Icon Pack</a></h3>
-  <p>
-    Flat White Icon Pack is an open source Android app with over 140,000 downloads, designed to replace your phone's existing icons with a refreshing new look.
-    The icon pack contains over 1,100 icons to fully support devices around the world. This app combines programming and design through the Android platform.
-  </p>
-
-  <h3><a href="https://imgur.com/a/ELL4eY5">High School Debate Signups</a></h3>
-  <p>
-    This is a webapp that serves almost 200 weekly active users from a local high school debate team, implemented in Python on the back-end (with the Django Rest Framework and Django server-side rendering) and JQuery on the front-end.
-    The site provides an online interface for students and coaches to register for competitions with ease, and employs the Django admin site and staff roles so that team administrators can manage users, registrations, and models on their own.
-  </p>
-
-  <h3><a href="https://github.com/schwartzadev/flight-2-cal">Flight 2 Cal</a></h3>
-  <p>
-    This webapp is a tool to create events on Google Calendar, based off of flight codes (i.e. QF9).
-    This app makes use of Ajax and the <a href="https://developer.flightstats.com/">FlightStats API</a> to generate a view of the flight's information to the user and an external button to Google Calendar so that the user can add flights to their calendar.
-  </p>
-
-  <h3><a href="https://congressinfo.us/">Contact Congress</a></h3>
-  <p>
-    This website is designed to be a quick, efficient way to get in touch with any representative in congress and uses a variety of web tools, including Jekyll, described as a "static site generator," as well as Twitter's Bootstrap, JQuery, CSS, and of course, HTML.
-  </p>
-
-  <h3><a href="https://github.com/schwartzadev/debate-timer">Debate Timer</a></h3>
-  <p>
-    Debate Timer, or CX Timer, is a desktop timer made for High School debate competitions.
-    The timer simplifies timing by providing a number of highly specific functions to the user.
-    The timer is being used by a number of debaters in the high school community and is written in Java (using various Java 8 principles, including Lambdas) with Oracle's JavaFX packages for the GUI.
-  </p>
-  
-  <h3><a href="https://github.com/schwartzadev/cachejson">JSON Cache Module (Python)</a></h3>
-  <p>
-    This Python module gives users the ability to temporarily save, or cache, files requested from an API to assist in the development process while interfacing with API services that use JSON.
-    Specifically, this assists users in efficently developing programs or products without exceeding API (rate) limits in development.
-  </p>
+  {% for project in site.data.data.projects %}
+  <h3><a href="{{project.url}}">{{project.title}}</a></h3>
+  <p>{{project.description | markdownify}}</p>
+  {% endfor %}
 
   <footer>
     <p>View the source on <a href="https://github.com/schwartzadev/aschwartz.me">Github</a> &bull; &copy; Andrew Schwartz 2019</p>
