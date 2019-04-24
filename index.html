@@ -30,39 +30,21 @@
   <h2 class="red-bg">My Skills</h2><hr>
   <h3>Most of my skills are in design and programming.</h3>
   <p>I am confident with:</p>
-  <ul>
-    <li>Javascript
+  <ul>{% for product in site.data.data.confident-skills %}
+    <li>{% if product.url %}<a href="{{ product.url }}">{{ product.top }}</a>{% else %} {{ product.top }} {% endif %}{% if product.nested-skills %}
       <ul>
-        <li> <a href="https://reactjs.org/">React</a> </li>
-      </ul>
-    </li>
-    <li>Java</li>
-    <li>Python
-      <ul>
-        <li> <a href="https://www.djangoproject.com/">Django</a> </li>
-        <li>General Scripts</li>
-      </ul>
-    </li>
-    <li>Photoshop:
-      <ul>
-        <li>Graphics</li>
-        <li>Photo editing / retouching</li>
-      </ul>
-    </li>
-    <li>HTML / CSS
-      <ul>
-        <li><a href="https://jekyllrb.com">Jekyll</a></li>
-      </ul>
-    </li>
-    <li>Inkscape (Vector Design)</li>
-    <li>Vim and Sublime Text</li>
-    <li>Git and <a href="https://github.com/schwartzadev">Github</a></li>
+      {% for nestedproduct in product.nested-skills %}  <li>{% if nestedproduct.url %}<a href="{{ nestedproduct.url }}">{{ nestedproduct.nested }}</a>{% else %} {{ nestedproduct.nested }} {% endif %}</li>
+      {% endfor %}</ul>
+    {% endif %}</li>{% endfor %}
   </ul>
+
   <p>I am still learning:</p>
-  <ul>
-    <li>Android Development</li>
-    <li><a href="http://www.openscad.org/">OpenSCAD</a></li>
-    <li>Adobe Illustrator</li>
+  <ul>{% for product in site.data.data.learning-skills %}
+    <li>{% if product.url %}<a href="{{ product.url }}">{{ product.top }}</a>{% else %} {{ product.top }} {% endif %}{% if product.nested-skills %}
+      <ul>
+      {% for nestedproduct in product.nested-skills %}  <li>{% if nestedproduct.url %}<a href="{{ nestedproduct.url }}">{{ nestedproduct.nested }}</a>{% else %} {{ nestedproduct.nested }} {% endif %}</li>
+      {% endfor %}</ul>
+    {% endif %}</li>{% endfor %}
   </ul>
 
   <h2 class="red-bg">Projects</h2><hr>
