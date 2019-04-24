@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,12 +66,10 @@
   </ul>
 
   <h2 class="red-bg">Projects</h2><hr>
-
-  <h3><a href="https://play.google.com/store/apps/details?id=com.aschwartz.flatwhite">Flat White Icon Pack</a></h3>
-  <p>
-    Flat White Icon Pack is an open source Android app with over 140,000 downloads, designed to replace your phone's existing icons with a refreshing new look.
-    The icon pack contains over 1,100 icons to fully support devices around the world. This app combines programming and design through the Android platform.
-  </p>
+  {% for project in site.data.data.projects %}
+  <h3><a href="{{project.url}}">{{project.title}}</a></h3>
+  <p>{{project.description}}</p>
+  {% endfor %}
 
   <h3><a href="https://imgur.com/a/ELL4eY5">High School Debate Signups</a></h3>
   <p>
