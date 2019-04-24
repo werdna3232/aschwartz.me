@@ -30,9 +30,8 @@
   <h2 class="red-bg">My Skills</h2><hr>
   <h3>Most of my skills are in design and programming.</h3>
   <p>I am confident with:</p>
-
-  <ul>{% for product in site.data.data.skills %}
-    <li>{{ product.top }}{% if product.nested-skills %}
+  <ul>{% for product in site.data.data.confident-skills %}
+    <li>{% if product.url %}<a href="{{ product.url }}">{{ product.top }}</a>{% else %} {{ product.top }} {% endif %}{% if product.nested-skills %}
       <ul>
       {% for nestedproduct in product.nested-skills %}  <li>{% if nestedproduct.url %}<a href="{{ nestedproduct.url }}">{{ nestedproduct.nested }}</a>{% else %} {{ nestedproduct.nested }} {% endif %}</li>
       {% endfor %}</ul>
@@ -40,10 +39,12 @@
   </ul>
 
   <p>I am still learning:</p>
-  <ul>
-    <li>Android Development</li>
-    <li><a href="http://www.openscad.org/">OpenSCAD</a></li>
-    <li>Adobe Illustrator</li>
+  <ul>{% for product in site.data.data.learning-skills %}
+    <li>{% if product.url %}<a href="{{ product.url }}">{{ product.top }}</a>{% else %} {{ product.top }} {% endif %}{% if product.nested-skills %}
+      <ul>
+      {% for nestedproduct in product.nested-skills %}  <li>{% if nestedproduct.url %}<a href="{{ nestedproduct.url }}">{{ nestedproduct.nested }}</a>{% else %} {{ nestedproduct.nested }} {% endif %}</li>
+      {% endfor %}</ul>
+    {% endif %}</li>{% endfor %}
   </ul>
 
   <h2 class="red-bg">Projects</h2><hr>

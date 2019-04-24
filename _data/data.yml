@@ -42,7 +42,7 @@ projects:
     files requested from an API to assist in the development process while interfacing with API services that use JSON.
     Specifically, this assists users in efficently developing programs or products without exceeding API (rate) limits in development.
 
-skills:
+confident-skills:
  - top: Javascript
    nested-skills:
     - nested: React
@@ -64,4 +64,10 @@ skills:
  - top: Inkscape (Vector Design)
  - top: Vim and Sublime Text
  - top: Git and <a href="https://github.com/schwartzadev">Github</a>
+
+learning-skills:
+ - top: Android Development
+ - top: OpenSCAD
+   url: http://www.openscad.org/
+ - top: Adobe Illustrator
 ---
