@@ -41,4 +41,27 @@ projects:
     This Python module gives users the ability to temporarily save, or cache,
     files requested from an API to assist in the development process while interfacing with API services that use JSON.
     Specifically, this assists users in efficently developing programs or products without exceeding API (rate) limits in development.
+
+skills:
+ - top: Javascript
+   nested-skills:
+    - nested: React
+      url: https://reactjs.org/
+ - top: Java
+ - top: Python
+   nested-skills:
+    - nested: Django
+      url: https://www.djangoproject.com/
+    - nested: General Scripts
+ - top: Photoshop
+   nested-skills:
+    - nested: Graphics
+    - nested: Photo editing / retouching
+ - top: HTML / CSS
+   nested-skills:
+    - nested: Jekyll
+      url: https://jekyllrb.com
+ - top: Inkscape (Vector Design)
+ - top: Vim and Sublime Text
+ - top: Git and <a href="https://github.com/schwartzadev">Github</a>
 ---
