@@ -18,7 +18,7 @@ projects:
    url: https://github.com/schwartzadev/flight-2-cal
    description: |
     This webapp is a tool to create events on Google Calendar, based off of flight codes (i.e. QF9).
-    This app makes use of Ajax and the <a href="https://developer.flightstats.com/">FlightStats API</a>
+    This app makes use of Ajax and the [FlightStats API](https://developer.flightstats.com/)
     to generate a view of the flight's information to the user and an external button to Google Calendar so that the user can add flights to their calendar.
 
  - title: Contact Congress
