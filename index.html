@@ -49,7 +49,7 @@
 
   <h2 class="red-bg">Projects</h2><hr>
   {% for project in site.data.data.projects %}
-  <h3 id="{{project.title | url_encode}}"><a href="{{project.url}}">{{project.title}}</a></h3>
+  <h3 id="{{project.title | remove: ' ' | downcase }}"><a href="{{project.url}}">{{project.title}}</a></h3>
   <p>{{project.description | markdownify}}</p>
   {% endfor %}
 
