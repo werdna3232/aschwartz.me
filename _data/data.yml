@@ -68,12 +68,15 @@ confident-skills:
    nested-skills:
     - nested: Wireframing
     - nested: Iconography
+ - top: SQL Databases
+   nested-skills:
+    - nested: MySQL
+    - nested: PostgreSQL
  - top: Sublime Text
  - top: Git and <a href="https://github.com/schwartzadev">Github</a>
 
 learning-skills:
  - top: Android Development
- - top: OpenSCAD
-   url: http://www.openscad.org/
+ - top: CAD (<a href="https://www.openscad.org/">OpenSCAD</a>)
  - top: Adobe Illustrator
 ---
