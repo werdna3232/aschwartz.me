@@ -25,6 +25,13 @@
     <h1>I'm Andrew</h1>
   </header>
   <p><b>Let's get in touch: <a href="mailto:andrew@aschwartz.me">andrew@aschwartz.me</a> or at <a href="https://github.com/schwartzadev">schwartzadev</a> on Github.</b></p>
+
+  <h2 class="red-bg">My Projects</h2><hr>
+  {% for project in site.data.data.projects %}
+  <h3 id="{{project.title | remove: ' ' | downcase }}"><a href="{{project.url}}">{{project.title}}</a></h3>
+  <p>{{project.description | markdownify}}</p>
+  {% endfor %}
+
   <h2 class="red-bg">My Skills</h2><hr>
   <h3>Most of my skills are in design and programming.</h3>
   <p>I am confident with:</p>
@@ -45,11 +52,6 @@
     {% endif %}</li>{% endfor %}
   </ul>
 
-  <h2 class="red-bg">Projects</h2><hr>
-  {% for project in site.data.data.projects %}
-  <h3 id="{{project.title | remove: ' ' | downcase }}"><a href="{{project.url}}">{{project.title}}</a></h3>
-  <p>{{project.description | markdownify}}</p>
-  {% endfor %}
 
   <footer>
     <p>View the source on <a href="https://github.com/schwartzadev/aschwartz.me">Github</a> &bull; &copy; Andrew Schwartz 2019</p>
