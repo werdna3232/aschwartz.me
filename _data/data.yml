@@ -62,6 +62,7 @@ research:
       "Does \<email attribute\> correlate with winning a political race?" and
       "Does one party speak more positively than another?"
       I anticipate that this dataset will contain close to 25,000 emails by November 2020, when I intend to end the collection phase of this research.
+      Code available [here](https://github.com/schwartzadev/partisanship-db).
       Not drafted, not published.
 
 
@@ -69,7 +70,7 @@ research:
 confident-skills:
  - top: Python
    nested-skills:
-    - nested: <a href="https://www.djangoproject.com/">Django</a> (full stack)
+    - nested: [Django](https://www.djangoproject.com/) (full stack)
     - nested: API development
       url: https://www.django-rest-framework.org/
     - nested: Data analysis / visualization
@@ -97,10 +98,10 @@ confident-skills:
     - nested: MySQL
     - nested: PostgreSQL
  - top: Sublime Text
- - top: Git and <a href="https://github.com/schwartzadev">Github</a>
+ - top: Git and [Github](https://github.com/schwartzadev)
 
 learning-skills:
  - top: Android Development
- - top: CAD (<a href="https://www.openscad.org/">OpenSCAD</a>)
+ - top: CAD ([OpenSCAD](https://www.openscad.org/))
  - top: Adobe Illustrator
 ---
