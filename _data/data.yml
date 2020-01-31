@@ -50,9 +50,13 @@ confident-skills:
  - top: Java
  - top: Python
    nested-skills:
-    - nested: Django
+    - nested: Django (full stack)
       url: https://www.djangoproject.com/
-    - nested: General Scripts
+    - nested: API development
+      url: https://www.django-rest-framework.org/
+    - nested: Data analysis / visualization
+    - nested: Web scraping
+    - nested: Workflow automation
  - top: Adobe Photoshop
    nested-skills:
     - nested: Graphics
