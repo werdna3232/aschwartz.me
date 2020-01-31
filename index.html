@@ -21,12 +21,17 @@
   <title>Andrew Schwartz</title>
 </head>
 <body>
-  <header>
+  <header id="top-root">
     <h1>I'm Andrew</h1>
   </header>
   <p><b>Let's get in touch: <a href="mailto:andrew@aschwartz.me">andrew@aschwartz.me</a> or at <a href="https://github.com/schwartzadev">schwartzadev</a> on Github.</b></p>
+  <div class="center text-center">
+    <h3>
+      <a href="#research-root">My Research</a> &bull; <a href="#projects-root">My Projects</a> &bull; <a href="#skills-root">My Skills</a>
+    </h3>
+  </div>
 
-  <h2 class="red-bg">My Research</h2><hr>
+  <h2 id="research-root" class="red-bg">My Research</h2><hr>
   {% for project in site.data.data.research %}
   <h3 id="{{project.title | remove: ' ' | downcase }}">
   {% if project.url %}<a href="{{project.url}}">{{ project.title }}</a>
@@ -34,14 +39,17 @@
   </h3>
   <p>{{project.description | markdownify}}</p>
   {% endfor %}
+  <a href="#top-root">Back to top &#8613;</a>
 
-  <h2 class="red-bg">My Projects</h2><hr>
+  <h2 id="projects-root" class="red-bg">My Projects</h2><hr>
   {% for project in site.data.data.projects %}
   <h3 id="{{project.title | remove: ' ' | downcase }}"><a href="{{project.url}}">{{project.title}}</a></h3>
   <p>{{project.description | markdownify}}</p>
   {% endfor %}
+  <a href="#top-root">Back to top &#8613;</a>
 
-  <h2 class="red-bg">My Skills</h2><hr>
+
+  <h2 id="skills-root" class="red-bg">My Skills</h2><hr>
   <h3>Most of my skills are in design and programming.</h3>
   <h4>I am confident with:</h4>
   <ul>{% for product in site.data.data.confident-skills %}
@@ -60,6 +68,7 @@
       {% endfor %}</ul>
     {% endif %}</li>{% endfor %}
   </ul>
+  <a href="#top-root">Back to top &#8613;</a>
 
 
   <footer>
