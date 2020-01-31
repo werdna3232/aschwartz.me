@@ -45,9 +45,10 @@ projects:
 research:
   - title: Combining Word Embeddings for Binary Classification Tasks
     description: |
-      This article explores the potential of combining two word-level vector representations,
+      [This article](Schwartz  - Combined Word Embeddings - Jan-2020.pdf) explores the potential of combining two word-level vector representations,
       or word embeddings, for binary classification Natural Language Processing tasks.
-      This research considers GloVe, ELMo, and BERT embeddings
+      This research considers [GloVe](https://nlp.stanford.edu/projects/glove/),
+      [ELMo](https://allennlp.org/elmo), and [BERT](https://arxiv.org/abs/1810.04805) embeddings
       and compares the classification ability of a single embedding with the classification
       ability of the same embedding and an additional embedding on a single data set.
     url: Schwartz  - Combined Word Embeddings - Jan-2020.pdf
