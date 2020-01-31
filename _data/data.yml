@@ -42,6 +42,20 @@ projects:
     files requested from an API to assist in the development process while interfacing with API services that use JSON.
     Specifically, this assists users in efficently developing programs or products without exceeding API (rate) limits in development.
 
+research:
+  - title: Combining Word Embeddings for Binary Classification Tasks
+    description: |
+      This article explores the potential of combining two word-level vector representations,
+      or word embeddings, for binary classification Natural Language Processing tasks.
+      This research considers GloVe, ELMo, and BERT embeddings
+      and compares the classification ability of a single embedding with the classification
+      ability of the same embedding and an additional embedding on a single data set.
+    url: Schwartz  - Combined Word Embeddings - Jan-2020.pdf
+  - title: Political Emails Data Set
+    description: |
+      As of January 2020, I am collecting campaign emails from over ### campaigns.
+
+
 confident-skills:
  - top: Python
    nested-skills:

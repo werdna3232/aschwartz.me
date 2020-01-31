@@ -26,6 +26,15 @@
   </header>
   <p><b>Let's get in touch: <a href="mailto:andrew@aschwartz.me">andrew@aschwartz.me</a> or at <a href="https://github.com/schwartzadev">schwartzadev</a> on Github.</b></p>
 
+  <h2 class="red-bg">My Research</h2><hr>
+  {% for project in site.data.data.research %}
+  <h3 id="{{project.title | remove: ' ' | downcase }}">
+  {% if project.url %}<a href="{{project.url}}">{{ project.title }}</a>
+  {% else %}{{ project.title }}{% endif %}
+  </h3>
+  <p>{{project.description | markdownify}}</p>
+  {% endfor %}
+
   <h2 class="red-bg">My Projects</h2><hr>
   {% for project in site.data.data.projects %}
   <h3 id="{{project.title | remove: ' ' | downcase }}"><a href="{{project.url}}">{{project.title}}</a></h3>
