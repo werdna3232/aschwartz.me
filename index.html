@@ -34,7 +34,7 @@
 
   <h2 class="red-bg">My Skills</h2><hr>
   <h3>Most of my skills are in design and programming.</h3>
-  <p>I am confident with:</p>
+  <h4>I am confident with:</h4>
   <ul>{% for product in site.data.data.confident-skills %}
     <li>{% if product.url %}<a href="{{ product.url }}">{{ product.top }}</a>{% else %} {{ product.top }} {% endif %}{% if product.nested-skills %}
       <ul>
@@ -43,7 +43,7 @@
     {% endif %}</li>{% endfor %}
   </ul>
 
-  <p>I am still learning:</p>
+  <h4>I am still learning:</h4>
   <ul>{% for product in site.data.data.learning-skills %}
     <li>{% if product.url %}<a href="{{ product.url }}">{{ product.top }}</a>{% else %} {{ product.top }} {% endif %}{% if product.nested-skills %}
       <ul>
