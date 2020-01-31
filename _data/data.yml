@@ -8,7 +8,7 @@ projects:
 
  - title: High School Debate Signups
    description: |
-    This is a webapp that serves almost 200 weekly active users from a local high school debate team,
+    This is a web-app that serves over 200 weekly active users from a local high school debate team,
     implemented in Python on the back-end (with the Django Rest Framework and Django server-side rendering) and JQuery on the front-end.
     The site provides an online interface for students and coaches to register for competitions with ease,
     and employs the Django admin site and staff roles so that team administrators can manage users, registrations, and models on their own.
@@ -25,7 +25,7 @@ projects:
    url: https://congressinfo.us/
    description: |
     This website is designed to be a quick, efficient way to get in touch with any representative in congress and uses a
-    variety of web tools, including Jekyll, described as a "static site generator," as well as Twitter's Bootstrap, JQuery, CSS, and of course, HTML.
+    variety of web tools, including Jekyll, a "static site generator," as well as Bootstrap, JQuery, CSS, and of course, HTML.
 
  - title: Debate Timer
    url: https://github.com/schwartzadev/debate-timer
