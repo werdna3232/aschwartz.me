@@ -43,20 +43,19 @@ projects:
     Specifically, this assists users in efficently developing programs or products without exceeding API (rate) limits in development.
 
 confident-skills:
- - top: Javascript
-   nested-skills:
-    - nested: React
-      url: https://reactjs.org/
- - top: Java
  - top: Python
    nested-skills:
-    - nested: Django (full stack)
-      url: https://www.djangoproject.com/
+    - nested: <a href="https://www.djangoproject.com/">Django</a> (full stack)
     - nested: API development
       url: https://www.django-rest-framework.org/
     - nested: Data analysis / visualization
     - nested: Web scraping
     - nested: Workflow automation
+ - top: Javascript
+   nested-skills:
+    - nested: React
+      url: https://reactjs.org/
+ - top: Java
  - top: Adobe Photoshop
    nested-skills:
     - nested: Graphics
@@ -66,7 +65,10 @@ confident-skills:
     - nested: Jekyll
       url: https://jekyllrb.com
  - top: Inkscape (Vector Design)
- - top: Vim and Sublime Text
+   nested-skills:
+    - nested: Wireframing
+    - nested: Iconography
+ - top: Sublime Text
  - top: Git and <a href="https://github.com/schwartzadev">Github</a>
 
 learning-skills:
