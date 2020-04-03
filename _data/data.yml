@@ -80,15 +80,15 @@ confident-skills:
    nested-skills:
     - nested: React
       url: https://reactjs.org/
- - top: Java
- - top: Adobe Photoshop
-   nested-skills:
-    - nested: Graphics
-    - nested: Photo editing / retouching
+    - nested: Node and NPM
  - top: HTML / CSS
    nested-skills:
     - nested: Jekyll
       url: https://jekyllrb.com
+ - top: Adobe Photoshop
+   nested-skills:
+    - nested: Graphics
+    - nested: Photo editing / retouching
  - top: Inkscape (Vector Design)
    nested-skills:
     - nested: Wireframing
