@@ -60,7 +60,7 @@ research:
       I believe that this dataset will help answer questions such as:
       "Do Democrats and Republicans speak differently?"
       "What issues do political candidates focus on in campaign correspondence?"
-      "Does \<email attribute\> correlate with winning a political race?" and
+      "Does `<email attribute>` correlate with winning a political race?" and
       "Does one party speak more positively than another?"
       I anticipate that this dataset will contain close to 25,000 emails by November 2020, when I intend to end the collection phase of this research.
       Not drafted, not published.
