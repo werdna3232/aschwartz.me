@@ -35,7 +35,7 @@
     </nav>
   </div>
 
-  <h2 id="research-root" class="red-bg">My Research</h2><hr>
+  <h2 id="research-root" class="secondary-bg">My Research</h2><hr>
   {% for project in site.data.data.research %}
   <h3 id="{{project.title | remove: ' ' | downcase }}">
   {% if project.url %}<a href="{{project.url}}">{{ project.title }}</a>
@@ -45,7 +45,7 @@
   {% endfor %}
   <a href="#top-root">Back to top &#8613;</a>
 
-  <h2 id="projects-root" class="red-bg">My Projects</h2><hr>
+  <h2 id="projects-root" class="secondary-bg">My Projects</h2><hr>
   {% for project in site.data.data.projects %}
   <h3 id="{{project.title | remove: ' ' | downcase }}"><a href="{{project.url}}">{{project.title}}</a></h3>
   <p>{{project.description | markdownify}}</p>
@@ -53,7 +53,7 @@
   <a href="#top-root">Back to top &#8613;</a>
 
 
-  <h2 id="skills-root" class="red-bg">My Skills</h2><hr>
+  <h2 id="skills-root" class="secondary-bg">My Skills</h2><hr>
   <h3>Most of my skills are in design and programming.</h3>
   <h4>I am confident with:</h4>
   <ul>{% for product in site.data.data.confident-skills %}

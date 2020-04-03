@@ -1,11 +1,11 @@
 ---
 ---
-
-// https://coolors.co/293abc-8f95d5-b794e3-7136ba-f5a65b
-
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css);
 
 @import url(https://fonts.googleapis.com/css?family=Neuton|Work+Sans);
+
+$primary: #17219c;
+$secondary: #6096bf;
 
 html {
   box-sizing: border-box;
@@ -23,7 +23,7 @@ body {
   font-size: 1.3em;
   color: #354247;
   padding: 0 10px;
-  background-color: #F9F9F9;
+  background-color: #FCFCFC;
   width: 90%;
 }
 
@@ -76,7 +76,7 @@ h3 {
 
 
 a {
-  color: #248d7b;
+  color: $primary;
 }
 
 * {
@@ -111,8 +111,8 @@ footer {
   font-size: 80%;
 }
 
-.red-bg {
-  background-color: rgba(214, 54, 73, 0.6);
+.secondary-bg {
+  background-color: $secondary;
   color: #fff;
 }
 
