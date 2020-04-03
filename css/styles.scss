@@ -7,15 +7,13 @@
 
 @import url(https://fonts.googleapis.com/css?family=Neuton|Work+Sans);
 
-.table td, .text-center, footer {
-  text-align: center;
-}
-
 html {
   box-sizing: border-box;
 }
 
-*, :after, :before {
+*,
+:after,
+:before {
   box-sizing: inherit;
 }
 
@@ -41,15 +39,22 @@ a {
 }
 
 * {
-  font-family: Neuton, serif;
+  font-family: 'Luistana', serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1;
   margin: 1em 0 .5em;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -61,70 +66,9 @@ footer {
   font-size: .8em;
 }
 
-.row {
-  &::after, &::before {
-    display: table;
-    content: " ";
-    clear: both;
-  }
-}
-
-.half, .one, .one-fourth, .one-third, .two-thirds {
-  width: 100%;
-}
-
-@media only screen and (min-width: 800px) {
-  .full {
-    width: 100%;
-  }
-
-  .half {
-    width: calc(96% / 2);
-  }
-
-  .third {
-    width: calc(94% / 3);
-  }
-
-  .fourth {
-    width: calc(92% / 4);
-  }
-
-  .two-thirds {
-    width: calc(96% / 3 * 2);
-  }
-
-  .column {
-    float: left;
-    margin-right: calc(100% / 50);
-  }
-}
-
 .red-bg {
   background-color: rgba(214, 54, 73, 0.6);
   color: #fff;
-}
-
-.yellow-bg {
-  background-color: rgba(223, 162, 56, 0.75);
-  color: #fff;
-}
-
-.blue-bg {
-  background-color: rgba(36, 141, 123, 0.6);
-  color: #fff;
-}
-
-.red {
-  color: #d63649;
-}
-
-.yellow {
-  color: #dfa238;
-}
-
-.blue {
-  color: #248d7b;
 }
 
 .center {
@@ -133,27 +77,6 @@ footer {
   padding: 10px;
 }
 
-.table th, td {
-  padding: 7px;
-}
-
-.table {
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    overflow-x: auto;
-    font-size: 1.2em;
-  }
-
-  th {
-    background-color: rgba(36, 141, 123, 0.4);
-  }
-
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-}
-
-.bold {
-  font-style: bold;
+.text-center {
+  text-align: center;
 }
