@@ -24,7 +24,7 @@ export default () => (
         Made with ♥ and <a href="https://www.gatsbyjs.org/">GatsbyJS</a> in
         Colorado, USA
       </p>
-      <p>© Andrew Schwartz 2020</p>
+      <p>© Andrew Schwartz {new Date().getFullYear()}</p>
     </div>
   </footer>
 )
