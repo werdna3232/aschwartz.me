@@ -43,7 +43,7 @@
   <h2 id="research-root" class="secondary-bg">My Research</h2>
   <hr>
   {% for project in site.data.data.research %}
-    <h3 id="{{project.title | remove: ' ' | downcase }}">
+    <h3 id="{{project.title | remove: ' ' | downcase }}" class="item-header">
       {% if project.url %}
         <a href="{{project.url}}">{{ project.title }}</a>
       {% else %}
