@@ -6,6 +6,7 @@ import Container from './container'
 import SEO from './seo'
 
 import '../../../scss/global.scss'
+import 'normalize.css'
 
 const Layout = ({ title, children }) => {
   return (
