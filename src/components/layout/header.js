@@ -1,5 +1,5 @@
 import React from 'react'
-import Navigation from '../components/navigation'
+import Navigation from '../navigation'
 
 export default ({ isHomepage = false }) => {
   if (isHomepage) {

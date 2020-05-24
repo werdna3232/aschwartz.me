@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 
 import Footer from './footer'
 import Container from './container'
-import SEO from '../components/seo'
+import SEO from './seo'
 
-import '../../scss/global.scss'
+import '../../../scss/global.scss'
 
 const Layout = ({ title, children }) => {
   return (
