@@ -1,12 +1,18 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Logo from './logo'
 import NaviagationItems from '../../content/navigation.yaml'
 import NaviagationStyles from './navigation.module.scss'
 
 export default () => (
-  <nav className={NaviagationStyles.container}>
-    {NaviagationItems.nav.map(item => (
-      <Link to={item.href}>{item.name}</Link>
-    ))}
-  </nav>
+  <div className={NaviagationStyles.wrapper}>
+    <div className={NaviagationStyles.logoContainer}>
+      <Logo />
+    </div>
+    <nav className={NaviagationStyles.container}>
+      {NaviagationItems.nav.map(item => (
+        <Link to={item.href}>{item.name}</Link>
+      ))}
+    </nav>
+  </div>
 )
