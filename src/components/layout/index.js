@@ -13,8 +13,8 @@ const Layout = ({ title, children }) => {
       <SEO title={title} />
       <Container>
         <main>{children}</main>
-        <Footer />
       </Container>
+      <Footer />
     </>
   )
 }
