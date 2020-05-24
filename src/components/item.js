@@ -10,6 +10,9 @@ export default ({ title, content, url }) => (
         <a href={url}>{title}</a>
       </h3>
     )}
-    <p className={ItemStyles.content}>{content}</p>
+    <div
+      className={ItemStyles.content}
+      dangerouslySetInnerHTML={{ __html: content }}
+    />
   </div>
 )

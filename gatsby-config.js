@@ -14,6 +14,19 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./content/`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-yaml-plus`,
+      options: {
+        enableRemark: true,
+        markdownPreface: 'md//',
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
