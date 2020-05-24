@@ -5,7 +5,7 @@ import Header from '../components/layout/header'
 
 import Section from '../components/section'
 import Lede from '../components/lede'
-import Hr from '../components/hr'
+import CallsToAction from '../components/calls-to-action'
 
 import ProjectsData from '../../content/projects.yaml'
 
@@ -17,6 +17,12 @@ export default () => (
       <a href="github.com/schwartzadev/">GitHub</a>.
     </Lede>
     <Section items={ProjectsData.projects} title="Projects" />
-    <Hr />
+    <CallsToAction
+      title="Learn more about me"
+      ctas={[
+        { name: 'Explore my skills', href: '/skills' },
+        { name: 'Check out my research', href: '/research' },
+      ]}
+    />
   </Layout>
 )
