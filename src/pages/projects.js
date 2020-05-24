@@ -14,6 +14,6 @@ export default () => (
       Explore what I’ve been working on below ↓ or on{' '}
       <a href="github.com/schwartzadev/">GitHub</a>.
     </Lede>
-    <Section items={ProjectsData.projects} />
+    <Section items={ProjectsData.projects} title="Projects" />
   </Layout>
 )

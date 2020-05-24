@@ -1,9 +1,10 @@
 import React from 'react'
 import Item from './item'
+import SectionStyles from './section.module.scss'
 
 export default ({ title, items }) => (
   <div>
-    <h2>{title}</h2>
+    <h2 className={SectionStyles.title}>{title}</h2>
     {items.map(item => (
       <Item title={item.title} content={item.description} url={item.url} />
     ))}
