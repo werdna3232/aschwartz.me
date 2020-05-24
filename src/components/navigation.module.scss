@@ -1,0 +1,16 @@
+@import '../../scss/variables.module.scss';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+
+  [aria-current] {
+    text-decoration: underline;
+  }
+
+  a {
+  	text-decoration: none;
+  	color: $color-text;
+  }
+}
