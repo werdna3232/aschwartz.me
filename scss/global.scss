@@ -3,3 +3,18 @@
 html {
   background-color: $color-background;
 }
+
+p,
+a,
+span,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $sans-serif;
+}
+
+h1,
+h2 {
+  font-family: $serif;
+}
