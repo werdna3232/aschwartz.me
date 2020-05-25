@@ -5,7 +5,7 @@ import NaviagationItems from '../../content/navigation.yaml'
 import NaviagationStyles from './navigation.module.scss'
 
 export default () => (
-  <div className={NaviagationStyles.wrapper}>
+  <div className={NaviagationStyles.wrapper} id="nav">
     <div className={NaviagationStyles.logoContainer}>
       <Logo />
     </div>

@@ -14,5 +14,8 @@ export default ({ title, ctas }) => (
         </li>
       ))}
     </ul>
+    <a className={CallsToActionStyles.topLink} href="#nav">
+      Back to top.
+    </a>
   </div>
 )

@@ -1,3 +1,5 @@
+@import '../../scss/variables.module.scss';
+
 .ctas-list {
   li::after {
     content: " →";
@@ -5,9 +7,14 @@
   li {
     margin-bottom: 0.5rem;
   }
+  margin-bottom: 2rem;
 }
 
 .title {
   margin-top: 2rem;
   margin-bottom: 1rem;
+}
+
+.top-link {
+  color: $color-text;
 }
