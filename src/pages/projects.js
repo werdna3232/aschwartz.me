@@ -8,14 +8,14 @@ export default ({ data }) => {
     list => list.projects !== null
   ).projects
 
-  const ledeContent = (
-    <>
-      Explore what I’ve been working on below ↓ or on{' '}
-      <a href="github.com/schwartzadev/">GitHub</a>.
-    </>
-  )
+  const ledeContent = <>Explore what I’ve been working on.</>
 
   const ctas = [
+    {
+      name: 'Browse my GitHub',
+      href: 'https://github.com/schwartzadev/',
+      external: true,
+    },
     { name: 'Explore my skills', href: '/skills' },
     { name: 'Check out my research', href: '/research' },
   ]
