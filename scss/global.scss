@@ -15,6 +15,11 @@ h6 {
   font-family: $sans-serif;
 }
 
+p,
+span {
+  line-height: 160%;
+}
+
 h1,
 h2 {
   font-family: $serif;
