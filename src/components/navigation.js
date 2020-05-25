@@ -11,7 +11,9 @@ export default () => (
     </div>
     <nav className={NaviagationStyles.container}>
       {NaviagationItems.nav.map(item => (
-        <Link to={item.href}>{item.name}</Link>
+        <Link to={item.href} key={item.name}>
+          {item.name}
+        </Link>
       ))}
     </nav>
   </div>

@@ -6,7 +6,12 @@ export default ({ title, items }) => (
   <div>
     <h2 className={SectionStyles.title}>{title}</h2>
     {items.map(item => (
-      <Item title={item.title} content={item.description} url={item.url} />
+      <Item
+        key={item.title}
+        title={item.title}
+        content={item.description}
+        url={item.url}
+      />
     ))}
   </div>
 )
