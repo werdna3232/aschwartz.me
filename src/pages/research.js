@@ -4,26 +4,21 @@ import { graphql } from 'gatsby'
 import ListPage from '../components/list-page'
 
 export default ({ data }) => {
-  const projects = data.allContentYaml.nodes.find(
-    list => list.projects !== null
-  ).projects
+  const research = data.allContentYaml.nodes.find(
+    list => list.research !== null
+  ).research
 
-  const ledeContent = (
-    <>
-      Explore what I’ve been working on below ↓ or on{' '}
-      <a href="github.com/schwartzadev/">GitHub</a>.
-    </>
-  )
+  const ledeContent = <>See my past and current research projects.</>
 
   const ctas = [
-    { name: 'Explore my skills', href: '/skills' },
-    { name: 'Check out my research', href: '/research' },
+    { name: 'Read my latest updates', href: '/' },
+    { name: 'See my projects', href: '/projects' },
   ]
 
   return (
     <ListPage
-      listItems={projects}
-      title="Projects"
+      listItems={research}
+      title="Research"
       ledeContent={ledeContent}
       ctaTitle="Learn more about me"
       callsToAction={ctas}
@@ -35,7 +30,7 @@ export const query = graphql`
   query {
     allContentYaml {
       nodes {
-        projects {
+        research {
           description
           title
           url
