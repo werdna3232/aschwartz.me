@@ -4,7 +4,7 @@ import SectionStyles from './section.module.scss'
 
 export default ({ title, items = [], htmlContent }) => (
   <div>
-    <h2 className={SectionStyles.title}>{title}</h2>
+    <h1 className={SectionStyles.title}>{title}</h1>
     {htmlContent && (
       <div
         className={SectionStyles.content}
