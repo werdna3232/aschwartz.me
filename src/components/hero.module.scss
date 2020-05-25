@@ -3,8 +3,11 @@
 .hero {
   font-family: $sans-serif;
   font-weight: bold;
-  font-size: 64px;
   line-height: 100%;
   color: $color-off-black;
   margin: 36px 0;
+  font-size: 4rem;
+  @media screen and (max-width: 560px) {
+    font-size: 3rem;
+  }
 }

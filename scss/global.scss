@@ -13,10 +13,6 @@ h4,
 h5,
 h6 {
   font-family: $sans-serif;
-}
-
-p,
-span {
   line-height: 160%;
 }
 
@@ -49,5 +45,12 @@ h3 {
 p {
   code {
     font-size: 0.9rem;
+  }
+}
+
+html {
+  font-size: 16px;
+  @media screen and (max-width: 560px) {
+    font-size: 18px;
   }
 }
