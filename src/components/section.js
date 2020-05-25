@@ -3,7 +3,7 @@ import Item from './item'
 import SectionStyles from './section.module.scss'
 
 export default ({ title, items = [], htmlContent }) => (
-  <div>
+  <section>
     <h1 className={SectionStyles.title}>{title}</h1>
     {htmlContent && (
       <div
@@ -19,5 +19,5 @@ export default ({ title, items = [], htmlContent }) => (
         slug={item.slug}
       />
     ))}
-  </div>
+  </section>
 )
