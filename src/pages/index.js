@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 
 import CallsToAction from '../components/calls-to-action'
 import Hero from '../components/hero'
@@ -17,9 +18,9 @@ export default ({ data }) => {
   )
   return (
     <Layout title="Home">
+      <Navigation />
       <Hero />
       <Lede>{ledeContent}</Lede>
-      <Navigation homepage />
       <Section htmlContent={data.markdownRemark.html} title="Latest News" />
       <CallsToAction
         ctas={[

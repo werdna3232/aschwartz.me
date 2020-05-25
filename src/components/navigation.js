@@ -6,11 +6,9 @@ import NaviagationStyles from './navigation.module.scss'
 
 export default ({ homepage = false }) => (
   <div className={NaviagationStyles.wrapper} id="nav">
-    {!homepage && (
-      <div className={NaviagationStyles.logoContainer}>
-        <Logo />
-      </div>
-    )}
+    <div className={NaviagationStyles.logoContainer}>
+      <Logo />
+    </div>
     <nav className={NaviagationStyles.container}>
       {NaviagationItems.nav.map(item => (
         <Link to={item.href} key={item.name}>
