@@ -21,8 +21,11 @@ export default () => (
         <a href="https://github.com/schwartzadev/aschwartz.me">GitHub</a>
       </p>
       <p>
-        Made with ♥ and <a href="https://www.gatsbyjs.org/">GatsbyJS</a> in
-        Colorado, USA
+        Made with{' '}
+        <span role="img" aria-label="heart">
+          ❤️
+        </span>{' '}
+        and <a href="https://www.gatsbyjs.org/">GatsbyJS</a> in Colorado, USA
       </p>
       <p>© Andrew Schwartz {new Date().getFullYear()}</p>
     </div>
