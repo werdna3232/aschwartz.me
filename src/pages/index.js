@@ -1,17 +1,31 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
+import CallsToAction from '../components/calls-to-action'
+import Hero from '../components/hero'
 import Layout from '../components/layout'
-import SEO from '../components/layout/seo'
+import Lede from '../components/lede'
+import Navigation from '../components/navigation'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
-
-export default IndexPage
+export default () => {
+  const ledeContent = (
+    <>
+      <b>Let's get in touch:</b>{' '}
+      <a href="mailto:andrew@aschwartz.me">andrew@aschwartz.me</a> or at{' '}
+      <a href="github.com/schwartzadev/">schwartzadev</a> on GitHub.
+    </>
+  )
+  return (
+    <Layout title="Home">
+      <Hero />
+      <Lede>{ledeContent}</Lede>
+      <Navigation homepage />
+      <CallsToAction
+        ctas={[
+          { name: 'Explore my projects', href: '/projects' },
+          { name: 'Learn about my research', href: '/research' },
+        ]}
+        title="Learn more about me"
+      />
+    </Layout>
+  )
+}
