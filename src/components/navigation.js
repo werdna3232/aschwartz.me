@@ -9,7 +9,7 @@ export default ({ homepage = false }) => (
     <div className={NaviagationStyles.logoContainer}>
       <Logo />
     </div>
-    <nav className={NaviagationStyles.container}>
+    <nav className={NaviagationStyles.container} role="navigation">
       {NaviagationItems.nav.map(item => (
         <Link to={item.href} key={item.name}>
           {item.name}
