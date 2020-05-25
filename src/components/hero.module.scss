@@ -1,0 +1,11 @@
+@import '../../scss/variables.module.scss';
+
+.hero {
+  font-family: $sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 100%;
+  color: #2C1E0F;
+  margin: 0;
+  margin-bottom: 36px;
+}
