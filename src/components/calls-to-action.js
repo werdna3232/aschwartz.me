@@ -4,7 +4,7 @@ import Hr from './hr'
 import CallsToActionStyles from './calls-to-action.module.scss'
 
 export default ({ title, ctas }) => (
-  <div>
+  <div className={CallsToActionStyles.container}>
     <Hr />
     <h2 className={CallsToActionStyles.title}>{title}</h2>
     <ul className={CallsToActionStyles.ctasList}>
