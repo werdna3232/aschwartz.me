@@ -16,7 +16,7 @@ export default ({ title, items = [], htmlContent }) => (
         key={item.title}
         title={item.title}
         content={item.description}
-        url={item.url}
+        slug={item.slug}
       />
     ))}
   </div>

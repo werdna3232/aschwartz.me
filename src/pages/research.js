@@ -33,7 +33,6 @@ export const query = graphql`
         research {
           description
           title
-          url
         }
       }
     }

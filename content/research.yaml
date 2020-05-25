@@ -10,7 +10,6 @@ research:
      ability of the same embedding and an additional embedding on a single data set. Drafted, not published.
    url: Schwartz  - Combined Word Embeddings - Jan-2020.pdf
  - title: Political Emails Data Set
-   url: https://github.com/schwartzadev/partisanship-db
    description: >-
      md//In January 2020, I began collecting campaign emails from over 600 U.S. House of
      Representatives congressional campaigns. I am currently collecting these emails to
@@ -20,4 +19,6 @@ research:
      “Does `<email attribute>` correlate with winning a political race?” and
      “Does one party speak more positively than another?”
      I anticipate that this dataset will contain close to 25,000 emails by November 2020,
-     when I intend to end the collection phase of this research. Not drafted, not published.
+     when I intend to end the collection phase of this research.
+     [The code is available on GitHub](https://github.com/schwartzadev/partisanship-db).
+     Not drafted, not published.

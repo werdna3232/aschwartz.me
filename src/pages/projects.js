@@ -38,7 +38,7 @@ export const query = graphql`
         projects {
           description
           title
-          url
+          slug
         }
       }
     }
