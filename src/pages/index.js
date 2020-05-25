@@ -5,8 +5,9 @@ import Hero from '../components/hero'
 import Layout from '../components/layout'
 import Lede from '../components/lede'
 import Navigation from '../components/navigation'
+import Section from '../components/section'
 
-export default () => {
+export default ({ data }) => {
   const ledeContent = (
     <>
       <b>Let's get in touch:</b>{' '}
@@ -19,6 +20,7 @@ export default () => {
       <Hero />
       <Lede>{ledeContent}</Lede>
       <Navigation homepage />
+      <Section htmlContent={data.markdownRemark.html} title="Latest News" />
       <CallsToAction
         ctas={[
           { name: 'Explore my projects', href: '/projects' },
@@ -29,3 +31,11 @@ export default () => {
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    markdownRemark(frontmatter: { slug: { eq: "latest-news" } }) {
+      html
+    }
+  }
+`
