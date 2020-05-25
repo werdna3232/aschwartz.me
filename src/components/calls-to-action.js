@@ -10,7 +10,11 @@ export default ({ title, ctas }) => (
     <ul className={CallsToActionStyles.ctasList}>
       {ctas.map(cta => (
         <li key={cta.name}>
-          <Link to={cta.href}>{cta.name}</Link>
+          {cta.external ? (
+            <a href={cta.href}>{cta.name}</a>
+          ) : (
+            <Link to={cta.href}>{cta.name}</Link>
+          )}
         </li>
       ))}
     </ul>
