@@ -8,7 +8,9 @@ import Navigation from '../components/navigation'
 import Section from '../components/section'
 
 export default ({ data }) => {
-  const ledeContent = <>Here’s what I do.</>
+  const ledeContent = (
+    <>I am a capable programmer and an aspiring designer. Here’s what I do.</>
+  )
   return (
     <Layout title="Skills">
       <Navigation />

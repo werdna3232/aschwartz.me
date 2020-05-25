@@ -2,8 +2,6 @@
 slug: 'skills'
 ---
 
-## I am a capable programmer and an aspiring designer.
-
 ### I prefer to use:
 
 - [Gatsby](gatsbyjs.org) for front-end website development
