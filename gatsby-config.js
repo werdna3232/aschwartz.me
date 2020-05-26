@@ -1,8 +1,16 @@
 module.exports = {
   siteMetadata: {
     title: `Andrew Schwartz`,
-    description: `Andrew Schwartz's personal website.`,
+    description: `The personal website of Andrew Schwartz.`,
     author: `Andrew Schwartz`,
+    keywords: [
+      'Andrew',
+      'Schwartz',
+      'Design',
+      'Software',
+      'Colorado',
+      'Programming',
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
