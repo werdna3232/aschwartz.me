@@ -11,7 +11,7 @@ import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
 function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+  const data = useStaticQuery(
     graphql`
       query {
         site {
@@ -19,13 +19,21 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
+          }
+        }
+        imageSharp(fluid: {originalName: {eq: "social-card.png"}}) {
+          resize(width: 1200) {
+            src
           }
         }
       }
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const socialCard = `${data.site.siteMetadata.siteUrl}${data.imageSharp.resize.src}`
+
+  const metaDescription = description || data.site.siteMetadata.description
 
   return (
     <Helmet
@@ -33,7 +41,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | ${data.site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
@@ -57,7 +65,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: data.site.siteMetadata.author,
         },
         {
           name: `twitter:title`,
@@ -67,6 +75,14 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          property: 'og:image',
+          content: socialCard,
+        },
+        {
+          name: 'twitter:image',
+          content: socialCard,
+        }
       ].concat(meta)}
     />
   )

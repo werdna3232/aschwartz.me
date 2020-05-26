@@ -3,9 +3,11 @@ module.exports = {
     title: `Andrew Schwartz`,
     description: `The personal website of Andrew Schwartz.`,
     author: `Andrew Schwartz`,
+    siteUrl: 'https://aschwartz.me',
     keywords: [
       'Andrew',
       'Schwartz',
+      'Andrew Schwartz',
       'Design',
       'Software',
       'Colorado',
