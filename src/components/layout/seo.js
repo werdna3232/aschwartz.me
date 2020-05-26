@@ -20,9 +20,15 @@ function SEO({ description, lang, meta, title }) {
             description
             author
             siteUrl
+            keywords
           }
         }
-        imageSharp(fluid: {originalName: {eq: "social-card.png"}}) {
+        socialCard: imageSharp(fluid: {originalName: {eq: "social-card.png"}}) {
+          resize(width: 1200) {
+            src
+          }
+        }
+        twitterSocialCard: imageSharp(fluid: {originalName: {eq: "twitter-social-card.png"}}) {
           resize(width: 1200) {
             src
           }
@@ -31,7 +37,8 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
-  const socialCard = `${data.site.siteMetadata.siteUrl}${data.imageSharp.resize.src}`
+  const socialCard = `${data.site.siteMetadata.siteUrl}${data.socialCard.resize.src}`
+  const twitterSocialCard = `${data.site.siteMetadata.siteUrl}${data.twitterSocialCard.resize.src}`
 
   const metaDescription = description || data.site.siteMetadata.description
 
@@ -48,8 +55,12 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          name: "keywords",
+          content: data.site.siteMetadata.keywords.join(","),
+        },
+        {
           property: `og:title`,
-          content: title,
+          content: `${title} – Andrew Schwartz`,
         },
         {
           property: `og:description`,
@@ -69,7 +80,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: `${title} – Andrew Schwartz`,
         },
         {
           name: `twitter:description`,
@@ -81,7 +92,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: 'twitter:image',
-          content: socialCard,
+          content: twitterSocialCard,
         }
       ].concat(meta)}
     />

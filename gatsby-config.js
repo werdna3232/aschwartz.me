@@ -4,6 +4,7 @@ module.exports = {
     description: `The personal website of Andrew Schwartz.`,
     author: `Andrew Schwartz`,
     siteUrl: 'https://aschwartz.me',
+    siteName: 'aschwartz.me',
     keywords: [
       'Andrew',
       'Schwartz',
@@ -50,7 +51,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://aschwartz/me`,
+        siteUrl: `https://aschwartz.me`,
       },
     },
     {
