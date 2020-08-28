@@ -2,9 +2,12 @@
 slug: 'latest-news'
 ---
 
+### August, 2020
+- I am joining [Professor Robin Burke](https://www.colorado.edu/cmci/people/college-leadership/robin-burke) and [That Recommender Systems Lab](http://www.that-recsys-lab.net/) to assist with research on multistakeholder recommender systems and concepts of fairness within recommender systems.
+
 ### May, 2020
 
-- I will be joining [The COVID Tracking Project](covidtracking.com/)'s website team through the rest of the summer!
+- I will be joining [The COVID Tracking Project](covidtracking.com/)'s website team through the rest of the summer.
 
 ### April, 2020
 
