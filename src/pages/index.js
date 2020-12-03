@@ -11,9 +11,9 @@ import Section from '../components/section'
 export default ({ data }) => {
   const ledeContent = (
     <>
-      <b>Let's get in touch:</b>{' '}
+      <b>Let’s get in touch:</b>{' '}
       <a href="mailto:andrew@aschwartz.me">andrew@aschwartz.me</a> or{' '}
-      <a href="github.com/schwartzadev/">schwartzadev</a> on GitHub.
+      <a href="https://github.com/schwartzadev/">schwartzadev</a> on GitHub.
     </>
   )
   return (
