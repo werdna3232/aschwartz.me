@@ -4,8 +4,10 @@ slug: 'skills'
 
 ### I prefer to use:
 
-- [Gatsby](gatsbyjs.org) for front-end website development
-- Python, [Django](https://www.djangoproject.com/), and Django Rest Framework for full-stack website development
+- [React](https://reactjs.org/) or [Gatsby](https://gatsbyjs.org) for front-end
+website development
+- Python, [Django](https://www.djangoproject.com/), and Django Rest Framework for
+full-stack website development
 - [Inkscape](https://inkscape.org/) or [Figma](https://www.figma.com/) for mockups and wireframes
 
 ### I am confident with:
@@ -24,7 +26,8 @@ I have used Python for a variety of projects, including:
 
 I have worked with Javascript on both the front- and back-end. Some Javascript tools that I’ve worked with include:
 
-- [Gatsby](gatsbyjs.org) (which is based on [React](https://reactjs.org/)) for front-end website development of static sites (like this one!)
+- [Gatsby](https://gatsbyjs.org) (which is based on [React](https://reactjs.org/)) for
+front-end website development of static sites (like this one!)
 - Vanilla [React](https://reactjs.org/) to consume APIs
 - [JQuery](https://jquery.com/) and Ajax for various front-end applications
 - Node
@@ -32,10 +35,10 @@ I have worked with Javascript on both the front- and back-end. Some Javascript t
 
 #### Static Site Generators
 
-I am a big fan of sites that run without Javascript. I am very comfortable working in these two platforms:
+I am a big fan of sites that run without Javascript. I am very comfortable working with:
 
 - [Jekyll](https://jekyllrb.com/), a static site generator based on Ruby
-- [Eleventy](https://www.11ty.dev/), a Javascript-based static site generator that’s great for rapid prototyping
+- [Eleventy](https://www.11ty.dev/), a static site generator based on Javascript that’s great for rapid prototyping
 
 #### Design Tools
 
@@ -46,7 +49,7 @@ When possible, I prefer to work in vector spaces and with open source tools. I o
 
 #### Miscellaneous
 
-- **Databases**: I almost always prefer to work with an ORM, but I'm comfortable with basic
+- **Databases**: I almost always prefer to work with an ORM, but I'm comfortable with
   SQL and relational databases like MySQL and PostgreSQL
 - **Git**: Love it. I prefer working with GitHub for online/remote version control.
 - **Java**: Java is great, but I tend to opt for Python when either language could be used.
