@@ -2,6 +2,11 @@
 slug: 'latest-news'
 ---
 
+### March, 2021
+The COVID Tracking Project is [wrapping up](https://covidtracking.com/analysis-updates/covid-tracking-project-end-march-7).
+As the project winds down, I'll be working on engineering at a stealth startup.
+
+
 ### January, 2021
 * I'm on Twitter now! Follow me [@andrewtschwartz](https://twitter.com/andrewtschwartz).
 * I kicked off [my department's](https://www.colorado.edu/cmci/infoscience) colloquium
@@ -17,8 +22,8 @@ within recommender systems.
 
 ### May, 2020
 
-I will be joining [The COVID Tracking Project](https://covidtracking.com/)'s
-website team through the rest of the summer.
+I will be joining [The COVID Tracking Project](https://covidtracking.com/) as a Software
+Engineer on the website team for the forseeable future.
 
 ### April, 2020
 
